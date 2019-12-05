@@ -1,0 +1,10 @@
+<div>
+    <h1>This is property binding excercise</h1>
+</div>
+<div>
+    <h3 [textContent]=" 'Name :' + person.name"></h3>
+    <button (click)="person = boy" [disabled]="person.gender == 'm' ">boy</button>
+    <button (click)="person = girl" [disabled]="person.gender == 'f' ">girl</button>
+    <p></p>
+    <Div><img [src]="person.image" [alt]="person.name" [title]="person.name" width="400px"></Div>
+</div>
